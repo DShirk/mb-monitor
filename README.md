@@ -2,7 +2,7 @@
 
 To launch the monitoring service, run:
 
-pm2 start mb-monitor --cron `* * * * *` --no-autorestart --instances 1
+pm2 start app.js --name mb-monitor --cron `0 */6 * * *` --no-autorestart --instances 1
 
 Where mb-monitor is the id of the service.
 
