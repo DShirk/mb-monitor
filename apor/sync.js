@@ -2,7 +2,7 @@ const { MD5 } = require("crypto-js");
 const https = require("https");
 
 function syncDB(client) {
-  console.log("Syncing data with CFPB....");
+  console.log(`${new Date().toISOString()}: Syncing data with CFPB....`);
   // setTimeout to make sure client object has time to be initialized and passed to this function.
   const loanTypes = ["fixed", "adjustable"];
 
